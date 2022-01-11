@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Requests\PizzaStoreRequest;
 use Illuminate\Http\Request;
 
 class PizzaaController extends Controller
@@ -14,7 +14,7 @@ class PizzaaController extends Controller
     public function index()
     {
         //
-        return view('pizza.index');
+        return 'list of pizza';
     }
 
     /**
@@ -25,6 +25,7 @@ class PizzaaController extends Controller
     public function create()
     {
         //
+        return view('pizza.create');
     }
 
     /**
@@ -33,9 +34,10 @@ class PizzaaController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PizzaStoreRequest $request)
     {
         //
+        
     }
 
     /**
