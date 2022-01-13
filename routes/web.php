@@ -28,6 +28,10 @@ Route::post('/pizza/store', [App\Http\Controllers\PizzaaController::class, 'stor
 Route::get('/pizza/{id}/edit', [App\Http\Controllers\PizzaaController::class, 'edit'])->name('pizza.edit');
 Route::put('/pizza/{id}/update', [App\Http\Controllers\PizzaaController::class, 'update'])->name('pizza.update');
 Route::delete('/pizza/{id}/delete', [App\Http\Controllers\PizzaaController::class, 'destroy'])->name('pizza.destroy');
+  
+   //user order
+   Route::get('/user/order', [App\Http\Controllers\UserOrderController::class, 'index'])->name('user.order');
+   Route::post('/order/{id}/status', [App\Http\Controllers\UserOrderController::class, 'changeStatus'])->name('order.status');
 
 });
 
