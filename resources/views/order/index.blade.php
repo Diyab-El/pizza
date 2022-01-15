@@ -9,12 +9,11 @@
                 <a class="navbar-brand p-1" href="#">Order</a>
               </nav>
             <div class="card">
-              
                 <div class="card-header  ">order
                 <a style="float:right;" href="{{route('pizza.index')}}">View Pizza</a>
                 <a style="float:right;" href="{{route('pizza.create')}}">Create Pizza</a>
               </div>
-              </div>
+              
                 <div class="card-body">
                     <table class="table table-bordered">
                         <thead>

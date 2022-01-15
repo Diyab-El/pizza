@@ -9,12 +9,13 @@
                 <div class="card-body">
                     <ul class="list-group"> 
                         <form method="{{route('frontpage')}}" method="get" >
-                            <a href="/">Back</a>
+                            <a class="list-group-item list-group-item-action" href="/">Back</a>
                         <input type="submit" value="Vegetarian" name="category" class="list-group-item list-group-item-action">
                         <input type="submit" value="Nonvegetarian" name="category" class="list-group-item list-group-item-action">
                         <input type="submit" value="Traditional" name="category" class="list-group-item list-group-item-action">
                         
                         </form>
+                        <h1 class="text-center">{{count($pizzas)}} pizza</h1>
                     </ul>
                 </div>
             </div>
