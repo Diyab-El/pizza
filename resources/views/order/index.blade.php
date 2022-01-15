@@ -4,12 +4,17 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
+          
             <nav class="navbar navbar-light bg-dark bg-opacity-10 mb-2">
                 <a class="navbar-brand p-1" href="#">Order</a>
               </nav>
             <div class="card">
-                <div class="card-header  ">order</div>
-
+              
+                <div class="card-header  ">order
+                <a style="float:right;" href="{{route('pizza.index')}}">View Pizza</a>
+                <a style="float:right;" href="{{route('pizza.create')}}">Create Pizza</a>
+              </div>
+              </div>
                 <div class="card-body">
                     <table class="table table-bordered">
                         <thead>
